@@ -1,0 +1,452 @@
+/********* Header Styling *********/
+header {
+    padding: 20px 0px
+}
+
+.logoAndNav {
+    width: 25vw;
+    height: auto;
+}
+
+#frame {
+    width: 15vw;
+    height: auto;
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    margin: auto;
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: black;
+}
+
+#namelink {
+    text-decoration: none;
+}
+
+#desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/************ Navigation Styling *************/
+#mainnav {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#mainnav > ul {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+#mainnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.mainnavButton {
+    width:140px;
+	height:36px;
+	line-height:1.8vw;
+	text-align:center;
+	text-decoration:none;
+    text-transform:uppercase;
+	font-family: 'Abhaya Libre', serif;
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: black;
+    margin: auto;
+    padding-right: 8px;
+}
+
+.mainnavButton:hover {
+    color: #2fada1;
+}
+
+#submenuContainer {
+    z-index: 2;
+    display: none;
+}
+
+li:hover #submenuContainer {
+    display: inline-block;
+}
+
+.submenu {
+    position: absolute;
+    top: 5px;
+    font-size: 1vw;
+}
+
+.submenu li {
+    padding-bottom: 2px;
+}
+
+.submenu > li > a {
+    text-decoration:none;
+    color: black;
+    text-transform:lowercase;
+}
+
+.submenu li a:hover {
+    color: #2fada1;
+}
+
+#submenuContainer:hover #projects {
+    color: #2fada1;
+}
+
+/************ Home Page Slideshow Styling *************/
+
+.hidden {
+    display: none;
+}
+
+.slideshowContainer {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#slideshow {
+	width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#slideshow img {
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    position: relative;
+}
+
+.textContainer {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 1px;
+    transform: translateY(-1px);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)
+}
+
+.text {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    position: absolute;
+    width: 25vw;
+    height: 5vw;
+    top: 19vw;
+    left: 7.5vw;
+}
+
+.slide:hover .textContainer {
+    opacity: 1;
+}
+
+/************ Other Page Styling *************/ 
+
+#workPage {
+    width: 60vw;   
+}
+
+#workPage #slideshow {
+    width: 30vw;
+    height: 30vw;
+} 
+
+#individPic {
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.picture {
+    width: 100%;
+    height: auto;
+}
+
+.paragraphIndented {
+    text-indent: 2vw;
+}
+
+main h3 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+main p {
+    width: 30vw;
+    margin: auto;
+    font-family: 'Abhaya Libre', serif;
+    padding-bottom: 10px;
+    font-size: 21px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+main p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.icon {
+    width: 5vw;
+    height: 5vw;
+    margin-right: 10px;
+}
+
+.imageContainer {
+    width: 5vw;
+    height: 5vw;
+}
+
+.imageContainer > img{
+    width: 100%;
+    height: auto;
+}
+
+.icon:last-child {
+    margin-right: 0px;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#follow {
+    width: 60vw;
+    margin: auto;
+}
+
+#follow h3 {
+    margin-bottom: 20px;
+}
+
+#contactPage p {
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: .75vw;
+}
+
+footer p a {
+    text-decoration:none;
+    color: black;
+}
+
+/************ Media Queries: for slightly smaller screen sizes *************/
+@media screen and (max-width: 780px) {
+    #desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .logoAndNav {
+        width: 100vw;
+        height: auto;
+        margin-top: -7.5vw;
+    }
+
+    #aboutLogoAndNav {
+        margin-bottom: -3.5vw;
+        margin-top: 35vw;
+    }
+
+    #workLogoAndNav {
+        margin-bottom: 0vw;
+        margin-top: 0vw;
+    }
+
+    #contactLogoAndNav {
+        margin-top: -40vw;
+    }
+
+    #frame {
+        width: 20vw;
+        height: auto;
+    }
+    
+    .name{
+        font-size: 2vw;
+        margin-bottom: .5vw;
+    }
+
+    #mainnav > ul > li {
+        padding-bottom: 1vw;
+    }
+    
+    .mainnavButton {
+        font-size: 2.25vw;
+    }
+    
+    .submenu {
+        font-size: 2vw;
+        top: -1px;
+    }
+    
+    .slideshowContainer {
+        width: 70vw;
+    }
+
+    #slideshow {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .text {
+        top: 22.5vw;
+        left: 0vw;
+        width: 50vw;
+        font-size: 3.5vw;
+    }
+
+    #workPage {
+        width: 70vw;   
+    }
+    
+    #workPage #slideshow {
+        width: 35vw;
+        height: 35vw;
+    } 
+
+    main p {
+        width: 35vw;
+        font-size: 2vw;
+    }
+
+    main h3 {
+        font-size: x-large;
+        margin-bottom: 5px;
+    }
+}
+
+
+/************ Media Queries: for Mobile Devices *************/
+@media screen and (max-width: 480px) {
+    /*@media only screen and (max-width: 600px)*/
+
+    #desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .logoAndNav {
+        width: 100vw;
+        height: auto;
+        margin-bottom: 5vw;
+    }
+
+    #aboutLogoAndNav {
+        margin-bottom: -10vw;
+        margin-top: 10vw;
+    }
+
+    #frame {
+        width: 30vw;
+        height: auto;
+    }
+    
+    .name{
+        font-size: 3vw;
+    }
+
+    #mainnav > ul > li {
+        padding-bottom: 1.5vw;
+    }
+    
+    .mainnavButton {
+        font-size: 3.5vw;
+    }
+    
+    .submenu {
+        font-size: 3.5vw;
+        top: -1px;
+    }
+    
+    .slideshowContainer {
+        width: 90vw;
+    }
+
+    #slideshow {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .text {
+        top: 35vw;
+        left: 10vw;
+        width: 50vw;
+        font-size: 4vw;
+    }
+
+    #workPage {
+        width: 90vw;   
+    }
+    
+    #workPage #slideshow {
+        width: 70vw;
+        height: 70vw;
+    } 
+
+    main p {
+        width: 70vw;
+        font-size: 3.5vw;
+    }
+
+    main h3 {
+        font-size: x-large;
+    }
+}
