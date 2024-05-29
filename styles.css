@@ -141,7 +141,7 @@ li:hover #submenuContainer {
 
 .textContainer {
     position: absolute;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.75);
     top: 1px;
     transform: translateY(-1px);
     width: 100%;
@@ -159,10 +159,9 @@ li:hover #submenuContainer {
     text-decoration:none;
     color: white;
     position: absolute;
-    width: 25vw;
-    height: 5vw;
-    top: 19vw;
-    left: 7.5vw;
+    width: 100%;
+    height: 99.9%;
+    padding-top: 17.5vw;
 }
 
 .slide:hover .textContainer {
@@ -172,20 +171,26 @@ li:hover #submenuContainer {
 /************ Other Page Styling *************/ 
 
 #workPage {
-    width: 60vw;   
+    width: 60vw;
+    margin-bottom: auto;
+    margin-top: 40px;
 }
 
 #workPage #slideshow {
     width: 30vw;
     height: 30vw;
-} 
+}
+
+#workPage .text {
+    font-size: 1.5vw;
+    padding-top: 13vw;
+}
 
 #individPic {
     width: 20vw;
     height: 20vw;
     margin: auto;
     overflow: hidden;
-    margin-top: 50px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
@@ -222,14 +227,14 @@ main p a {
 }
 
 .icon {
-    width: 5vw;
-    height: 5vw;
-    margin-right: 10px;
+    width: 4vw;
+    height: 4vw;
+    margin-right: 20px;
 }
 
 .imageContainer {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
 }
 
 .imageContainer > img{
@@ -282,7 +287,7 @@ footer p a {
 }
 
 /************ Media Queries: for slightly smaller screen sizes *************/
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 480px) and (max-width: 780px) {
     #desktop {
         display: flex;
         flex-direction: column;
@@ -294,21 +299,23 @@ footer p a {
     .logoAndNav {
         width: 100vw;
         height: auto;
-        margin-top: -7.5vw;
+        margin-top: -10vw;
+        margin-bottom: 7.5vw;
     }
 
     #aboutLogoAndNav {
         margin-bottom: -3.5vw;
-        margin-top: 35vw;
+        margin-top: 15vw;
     }
 
     #workLogoAndNav {
         margin-bottom: 0vw;
-        margin-top: 0vw;
+        margin-top: 10vw;
     }
 
     #contactLogoAndNav {
-        margin-top: -40vw;
+        margin-top: -20vw;
+        margin-bottom: 10vw;
     }
 
     #frame {
@@ -343,6 +350,11 @@ footer p a {
         height: 50vw;
     }
 
+    #slideshow .text {
+        font-size: 3vw;
+        top: 3.5vw;
+    }
+
     .text {
         top: 22.5vw;
         left: 0vw;
@@ -351,13 +363,19 @@ footer p a {
     }
 
     #workPage {
-        width: 70vw;   
+        width: 70vw;
     }
     
     #workPage #slideshow {
         width: 35vw;
         height: 35vw;
-    } 
+    }
+
+    #workPage #slideshow .text {
+        top: 2vw;
+        left: -8vw;
+        font-size: 2.5vw;
+    }
 
     main p {
         width: 35vw;
@@ -365,15 +383,15 @@ footer p a {
     }
 
     main h3 {
-        font-size: x-large;
+        font-size: 22px;
         margin-bottom: 5px;
     }
+
 }
 
 
 /************ Media Queries: for Mobile Devices *************/
-@media screen and (max-width: 480px) {
-    /*@media only screen and (max-width: 600px)*/
+@media screen and (max-width: 479.99px) {
 
     #desktop {
         display: flex;
@@ -386,12 +404,25 @@ footer p a {
     .logoAndNav {
         width: 100vw;
         height: auto;
-        margin-bottom: 5vw;
+        margin-bottom: 15vw;
+        margin-top: -35vw;
     }
 
     #aboutLogoAndNav {
-        margin-bottom: -10vw;
+        margin-bottom: 10vw;
+        margin-top: 35vw;
+    }
+
+    #workLogoAndNav {
+        margin-bottom: 15vw;
         margin-top: 10vw;
+    }
+
+    #individPic {
+        width: 30vw;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #frame {
@@ -425,21 +456,32 @@ footer p a {
         height: 70vw;
     }
 
+    #slideshow .text {
+        font-size: 4vw;
+        top: 13vw;
+        left: 9vw;
+    }
+
     .text {
-        top: 35vw;
-        left: 10vw;
         width: 50vw;
         font-size: 4vw;
     }
 
     #workPage {
-        width: 90vw;   
+        width: 90vw;
+        margin-top: 0px;
     }
     
     #workPage #slideshow {
         width: 70vw;
         height: 70vw;
-    } 
+    }
+
+    #workPage #slideshow .text {
+        font-size: 4vw;
+        top: 17vw;
+        left: 9vw;
+    }
 
     main p {
         width: 70vw;
@@ -447,6 +489,11 @@ footer p a {
     }
 
     main h3 {
-        font-size: x-large;
+        font-size: 5vw;
+        margin-bottom: 8px;
+    }
+
+    .paragraphIndented {
+        text-indent: 5vw;
     }
 }
