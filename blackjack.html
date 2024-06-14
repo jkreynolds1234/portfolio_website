@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Yearbook App</title>
+
+	<!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!--/ /-------- My Styles --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="slideshow.js"></script>
+
+</head>
+
+<body>
+    
+    <section id="desktop">
+        <section id="workLogoAndNav" class="logoAndNav">
+
+            <header>
+                <div id="frame">
+                    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+                </div>
+                <a id="namelink" href="index.html"><p class="name">Jenna Reynolds</p></a>
+            </header>
+
+            <nav id="mainnav">
+                <ul>
+                    <li><a id="projects" class="mainnavButton" href="index.html">Projects</a>
+                        <div id="submenuContainer">
+                            <ul class="submenu">
+                                <li><a href="game.html">game design</a></li>
+                                <li><a href="yearbook.html">yearbook app</a></li>
+                                <li><a href="visualization.html">data visualization</a></li>
+                                <li><a href="blackjack.html">blackjack</a></li>
+                                <li><a href="pong.html">pong</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="mainnavButton" href="about.html">About</a></li>
+                    <li><a class="mainnavButton" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <main id="workPage">  
+            <div class=slideshowContainer>
+                <i class="fa fa-chevron-left arrowL arrow fa-2x"></i>
+                <div id="slideshow">
+                    <div class="slide"><img src="images/blackjack/blackjack_welcome.png"/><div class="textContainer"><a class="text bold" target="_blank" href="https://github.com/jkreynolds1234/blackjack_with_save">View on<br>GitHub</a></div></div>
+                    <div class="slide hidden"><img src="images/blackjack/blackjack_1.png"/><div class="textContainer"><a class="text bold" target="_blank" href="https://github.com/jkreynolds1234/blackjack_with_save">View on<br>GitHub</a></div></div>
+                    <div class="slide hidden"><img src="images/blackjack/blackjack_2.png"/><div class="textContainer"><a class="text bold" target="_blank" href="https://github.com/jkreynolds1234/blackjack_with_save">View on<br>GitHub</a></div></div>
+                    <div class="slide hidden"><img src="images/blackjack/blackjack_3.png"/><div class="textContainer"><a class="text bold" target="_blank" href="https://github.com/jkreynolds1234/blackjack_with_save">View on<br>GitHub</a></div></div>
+                    <div class="slide hidden"><img src="images/blackjack/blackjack_load.png"/><div class="textContainer"><a class="text bold" target="_blank" href="https://github.com/jkreynolds1234/blackjack_with_save">View on<br>GitHub</a></div></div>
+                    <div class="slide hidden"><img src="images/blackjack/blackjack_records.png"/><div class="textContainer"><a class="text bold" target="_blank" href="https://github.com/jkreynolds1234/blackjack_with_save">View on<br>GitHub</a></div></div>
+                </div>
+                <i class="fa fa-chevron-right arrowR arrow fa-2x"></i>
+            </div>
+
+            <h3>Blackjack</h3>
+
+            <p>I created a blackjack game with a reusable playing card system and ASCII graphics. It was architected with a SQL driven data management system and Python.</p>
+
+        </main>
+    </section>
+    
+    <footer>
+    </footer>
+    
+</body> 
+</html>
