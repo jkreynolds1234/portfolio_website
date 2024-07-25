@@ -1,6 +1,6 @@
 /********* Header Styling *********/
 header {
-    padding: 20px 0px
+    margin: 20px 0px;
 }
 
 .logoAndNav {
@@ -393,6 +393,10 @@ footer p a {
 /************ Media Queries: for Mobile Devices *************/
 @media screen and (max-width: 479.99px) {
 
+    body {
+        margin-top: 60px;
+    }
+
     #desktop {
         display: flex;
         flex-direction: column;
@@ -405,17 +409,23 @@ footer p a {
         width: 100vw;
         height: auto;
         margin-bottom: 15vw;
-        margin-top: -35vw;
+    }
+
+    #indexLogoAndNav {
+        margin-top: -50vw;
     }
 
     #aboutLogoAndNav {
         margin-bottom: 10vw;
-        margin-top: 35vw;
+        margin-top: 25vw;
     }
 
     #workLogoAndNav {
         margin-bottom: 15vw;
-        margin-top: 10vw;
+    }
+
+    #contactLogoAndNav {
+        margin-top: -320px;
     }
 
     #individPic {
